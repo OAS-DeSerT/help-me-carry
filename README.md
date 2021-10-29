@@ -1,2 +1,2 @@
 # help-me-carry
-A mission demo on Jupiter Robot
+A ROS mission demo on Jupiter Robot
