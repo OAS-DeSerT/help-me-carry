@@ -1,0 +1,10 @@
+<launch>
+  <node pkg="carry_mission" type="arm_control" name="arm_control">
+    <remap from="arm_control/arm_cmd" to="arm_cmd"/>
+    <remap from="arm_control/waist_controller/command" to="waist_controller/command"/>
+    <remap from="arm_control/shoulder_controller/command" to="shoulder_controller/command"/>
+    <remap from="arm_control/elbow_controller/command" to="elbow_controller/command"/>
+    <remap from="arm_control/wrist_controller/command" to="wrist_controller/command"/>
+    <remap from="arm_control/hand_controller/command" to="hand_controller/command"/>
+  </node>
+</launch>

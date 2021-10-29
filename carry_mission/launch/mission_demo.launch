@@ -1,0 +1,9 @@
+<launch>
+    <include file="$(find jupiterobot_bringup)/launch/jupiterobot_bringup.launch" />
+    <include file="$(find rchomeedu_vision)/launch/multi_astra.launch" />
+    <!--include file="$(find robot_vision_openvino)/launch/yolo_ros.launch" /-->
+    <node name="soundplay" pkg="sound_play" type="soundplay_node.py" />
+    <node name="arm_control" pkg="carry_mission" type="arm_control" />
+    <node name="chassis_control" pkg="carry_mission" type="chassis_control.py" />
+    <!--node name="mission_demo" pkg="carry_mission" type="mission_demo.py" output="screen" /-->
+</launch>
