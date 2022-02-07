@@ -157,7 +157,7 @@ class MissionDemo(object):
 		elif msg.data.find("STOP-FOLLOW") > -1:
 			self.speaker.say("Here I will stop following you.")
 			self.control_follow(0)
-		else:    
+		else:
 			self._FLAG_EXECUTE = 0
 
 	def _vision_callback(self, msg):
